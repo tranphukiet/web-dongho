@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,300&display=swap');
+footer{
+    text-align: center;
+    margin-top: 500px;
+    background-color:rgb(223, 207, 184);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+                 body{
+                    font-family: 'Montserrat',sans-serif;
+                    font-size: 17px;
+                 }
+                *{
+                    box-sizing: border-box;
+                    
+                }
+           
+                #wrapper{
+                    display:flex;
+                    height: 20%;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 80vh;
+                  
+                 
+                
+                    
+
+                }
+                
+                form{
+                    border: 1px solid #dadce0 ;
+                    border-radius: 5px;
+                    padding: 45px;
+                }
+                h3{
+                    top: 50%;
+                    text-align: center;
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+                .form-group{
+                    margin-bottom: 30px;
+                    position: relative;
+                    /* z-index: -1 ; */
+                    
+                   
+                }
+                input{
+                    height: 35px;
+                    width: 300px;
+                    outline: none;
+                    border: 1px solid #dadce0;
+                    padding: 10px;
+                    border-radius: 5px;
+                    font-size: inherit;
+                    color: #202124;
+                    transition: all 0.3s ease-in-out;
+                   
+                }
+                label{
+                    position: absolute;
+                    padding: 0px 5px;
+                    left: 5px;
+                    top: 50%;
+                    pointer-events: none;/* khi tro chuot vao dang nhap hoac password se khong bi to den copy */
+                    transform: translateY(-50%);
+                    background: #fff;
+                    transition: all 0.3s ease-in-out; /* lam cham cai ten dang nhap va mat khau*/
+                    
+                }
+                .form-group input:focus + label ,.form-group input:valid + label /* valid neu dung no se thuc thi xuong phan css*/
+                {
+                    top: 0px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color:burlywood;
+                }
+                .form-group input:focus{
+                    border: 2px solid burlywood;
+
+                }
+                input#btn-login{
+                    background: black;
+                    color: burlywood;
+                    cursor: pointer; /* hinh ban tay khi tro chuot vao nut dang nhap*/
+                }
+                input#btn-login:hover{
+                    opacity: 0.5;
+                }
+            #from-dangky{
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align:start;
+                width:500px ;
+                border : 3px solid #333;
+                height:400px;
+                background-color: bisque;
+                z-index: -1;
+            }
+            input.btn-dangky{
+                background: #333;
+                color: bisque;
+                cursor: pointer;
+            }
+            h4 {
+                text-align: center;
+
+            }
+            .flex{
+                display: flex;
+                justify-self: center;
+
+            }
+            .card-body{
+                text-align: center;
+                flex: 1 1 auto;
+                padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+                color: var(--bs-card-color);
+            }
+        
+            
+
+            
+        
+             
+                /* required la bat buoc cac input nhap vao phai co du lieu*/
